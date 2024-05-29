@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "roboto";
+    src: url(../Roboto-Light.ttf);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+}
+header nav {
+    width: 1600px;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header nav .logo {
+    width: 250px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo h1 {
+    font-family:"roboto";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+    color: #1A1A1AB5;
+}
+header nav .logo h1 a {
+    font-family: "roboto";
+    text-decoration: none;
+    color: #1A1A1AB5;
+}
+header nav .logo img {
+    width: 35px;
+    height: 45px;
+    top: 16px;
+    left: 228px;
+    padding: 0.12px 0.11px 0px 0.15px;
+    gap: 0px;
+    opacity: 0px;
+}
+.ul-li-tag {
+    width: 330px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.ul-li-tag ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.ul-li-tag ul li a {
+    text-decoration: none;
+    font-family:"roboto";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20.4px;
+    text-align: left;
+    color: #2A2A2A;
+    position: relative;
+}
+.ul-li-tag ul li a:hover {
+    color: aqua; 
+}
+header .search {
+    width: 320px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    box-shadow: 12px 12px 27px #b3b3b3;
+}
+header .search .login {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+header .search .login a {
+    font-family: "roboto";
+    text-decoration: none;
+    color: #2A2A2A;
+    font-size: 18px;
+}
+header .search .login .journal {
+    padding: 0px 12px;
+    border-right: 2px solid gray;
+}
+header .search input {
+    width: 300px;
+    height: 43px;
+    top: 10px;
+    left: 10px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-size: 20px;
+    border: 1px solid gainsboro;
+}
+main {
+    width: 1640px;
+    height: 8150px;
+    margin: 0 auto;
+}
+.sectionimg {
+    width: 1640px;
+    height: 750px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #b3b3b3;
+    margin: 0 auto;
+    margin-top: 6cm;
+    overflow: hidden;
+    position: relative;
+}
+.sectionimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.sectionimg h1 {
+    position: relative;
+}
+
+.sectionimg .system {
+    position: absolute;
+    margin-top: 15cm;
+    margin-left: 5cm;
+}
+.sectionimg .system h1 {
+    color: white;
+    font-size: 30px;
+    font-family:"roboto";
+    font-weight: 400;
+    line-height: 28.5px;
+    text-align: left;
+}
+
+.sectionimg .system h3 {
+    font-family: "roboto";
+    color: white;
+    font-size: 23px;
+    margin-top: 1cm
+}
+
+.sectionimg .system h3 a {
+    text-decoration: none;
+    color: white;
+    font-family: "roboto";
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    position: relative;
+    margin-top: 1cm;
+}
+.sectionimg .system h3 a:hover {
+   color: aqua;
+}
+
+.shop {
+    width: 1300px;
+    height: 2680.25px;
+    margin: 0 auto;
+    margin-top: 1cm;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop .clothing {
+    width: 100%;
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop .clothing ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-family: "roboto";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.shop .clothing ul li a {
+    font-family: "roboto";
+    text-decoration: none;
+    color: #B3B3B3;
+    position: relative;
+}
+#lia {
+    position: relative;
+    color: black;
+    padding: 10px 15px;   
+}
+
+.shop .clothing ul li a:hover {
+    color: black;
+}
+.shop .card{
+    width: 1180px;
+    height: 2390.25px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+}
+.shop .card .cards{
+    width: 275px;
+    height: 420px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.shop .card .cards .imgdivs{
+    width: 275px;
+    height: 341px;
+    gap: 0px;
+    opacity: 0px;
+    overflow: hidden;
+    position: relative;
+}
+.shop .card .cards .imgdivs img{
+    width: 275px;
+    height: 341px;
+    transition: 0.3s;
+    position: absolute;
+}
+.sold{
+  width: 70px;
+  height: 40px;
+  background-color: #ECD3CA;
+  position: absolute;
+  margin-top: 0.5cm;
+  margin-left: 0.5cm;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+.shop .card .cards h2{
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #1A1A1A;
+}
+.shop .card .cards h3{
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+    color: #808080;
+}
+.shop button{
+    width: 302px;
+    height: 56px;
+    top: 2202px;
+    left: 439px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #1A1A1A;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    margin-top: 1cm;
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.shop  button:hover{
+   color: black;
+   background: none;
+   border: 1px solid;
+}
+.sectionimgs {
+    width: 1640px;
+    height: 750px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #b3b3b3;
+    margin: 0 auto;
+    margin-top: 3cm;
+    overflow: hidden;
+    position: relative;
+}
+.sectionimgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 0.3s;
+}
+.sectionimgs h1 {
+    position: relative;
+}
+.sectionimgs .simp {
+    width: 360px;
+    height: 208px;
+    position: absolute;
+    margin-top: 10cm;
+    margin-left: 5cm;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sectionimgs .simp h1 {
+    color: white;
+    font-family: "roboto";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+}
+.sectionimgs .simp h3 {
+    font-family: "roboto";
+    color: white;
+    font-size: 23px;
+    margin-top: 1cm
+}
+.sectionimgs .simp a {
+    font-family: "roboto";
+    color: white;
+    font-size: 23px;
+}
+.sectionimgs .simp button {
+    width: 182px;
+    height: 40px;
+    background-color: #7E6E45;
+    font-family: "roboto"   ;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #F7F7F7;
+    cursor: pointer;
+    border: none;
+}
+.ship{
+    position: relative;
+    margin-left: 36cm;
+    margin-top: 1cm;
+}
+.disc{
+    width: 100%;
+    height: 700px;
+    background-color: #312F2E;
+    margin-top: 1cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disc .collect{
+    width: 1160px;
+    height: 436px;
+    background-color: white;
+    display: flex;
+}
+.disc .collect .hold{
+    width: 406px;
+    height: 435.59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;  
+    padding: 50px;
+}
+.disc .collect .hold h1{
+    font-family: "roboto"   ;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 45.6px;
+    text-align: left;
+}
+.disc .collect .hold h4{
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;       
+    color: #1A1A1A;
+}
+.disc .collect .hold a{
+    font-family: "roboto"   ;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    text-decoration: none;
+    color: #1A1A1A;
+}
+.disc .collect .hold a{
+    text-decoration: none;
+    color: #1A1A1A;
+    position: relative;
+    font-family:"roboto"    ;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+.disc  .collect  .hold a:hover {
+    color: aqua;
+}
+.pen{
+    width: 754px;
+    height: 436px;
+    overflow: hidden;
+    position: relative;
+}
+.pen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mission{
+    width: 1160px;
+    height: 1600.59px;
+    margin: 0 auto;
+    margin-top: 1cm;
+}
+.mission .simple{
+    width: 630px;
+    height: 72px;
+    margin: 0 auto;
+    padding: 0px 0px 0px 80px;
+}
+.mission .simple h1{
+    font-family: "roboto";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #1A1A1A;    
+}
+.mission .shops{
+   width: 1160px;
+   height: 1370px;
+   margin-top: 2cm;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 50px;
+}
+.mission .shops .object{
+    width: 522px;
+    height: 690.27px;
+    overflow: hidden;
+    position: relative;
+ }
+ .mission .shops .bigobject{
+    width: 100%;
+    height: 700.27px;
+    margin-top: -0.7cm;
+ }
+ .mission .shops .object a{
+    text-decoration: none;
+    color: #1A1A1A;
+    position: relative;
+    font-family:"roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.object a:hover {
+    color: aqua;
+}
+.design {
+    width: 1640px;
+    height: 750px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #b3b3b3;
+    margin: 0 auto;
+    margin-top: 6cm;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.design img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.design .system {
+    width: 782px;
+    height: 160px;
+    position: absolute;
+    margin-top: -2cm;
+}
+
+.design .system h1 {
+    font-family: "roboto";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.design .system  a{
+    text-decoration: none;
+    color: white;
+    font-family:"roboto";
+    font-weight: 400;
+    line-height: 22.5px;
+    position: relative;
+    margin-top: 0cm;
+    margin-left: 8cm;
+}
+.design .system  a:hover{
+    color: aqua;
+}
+
+.stay{
+    width: 100%;
+    height: 473px;
+    background-color: #CED3CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stay .loop{
+    width: 420px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.stay .loop h1{
+    font-family:"roboto";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 40.8px;
+    text-align: center;
+    color: #1A1A1A;    
+}
+.stay .loop h3{
+    font-family: "roboto";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;    
+    color: #1A1A1A;    
+}
+.stay .loop .int input{
+    width: 338px;
+    height: 48px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: none;
+    outline: none;
+    font-size: 20px; 
+}
+.loop .int button{
+    width: 66px;
+    height: 48px;
+        border: none;
+        outline: none;
+        font-size: 20px; 
+        cursor: pointer;
+}
+footer{
+    width: 1640px;
+    height: 359px;
+    top: 442.56px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.divul{
+    width: 500px;
+    height: 190px;
+    display: flex;
+}
+.divul .divli{
+    width: 250px;
+    height: 190px;
+}
+.divul .divli ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divli ul li  a{
+    text-decoration: none;
+    color:black;
+    font-family:"roboto";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;    
+    position: relative;
+}
+
+.divli ul li a:hover{
+    color: aqua;
+}
+.divlogo{
+    width: 320px;
+        height: 189px;
+        left: 840px;
+        gap: 0px;
+        opacity: 0px;
+
+}
+.divlogo .logos{
+   width: 100%;
+   height: 88px;
+   display: flex;
+   gap: 30px;
+   text-align: right;
+   justify-content: end;
+}
+.icon{
+    width: 320px;
+    height: 65.5px;
+    top: 123.5px;
+    padding: 0px 0px 0px 198px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 1cm;
+    display: flex;
+    gap: 20px;
+}
+.icon span{
+    font-size: 35px;
+}
+.icon span a{
+    color: #000000;
+}
+ #insta:hover{
+color: rgb(221, 42, 123);
+ }
+ #tele:hover{
+    color: rgb(9, 20, 223);
+     }
+     #git:hover{
+        color: rgb(8, 46, 238);
+         }
